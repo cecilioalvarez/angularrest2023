@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
 const port = 3000
-
+const cors=require("cors");
+app.use(cors());
 let lista=["opcion1","opcion2","opcion3","opcion4"];
 
 app.get('/menus', (req, res) => {
