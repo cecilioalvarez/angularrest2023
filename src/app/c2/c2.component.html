@@ -1,0 +1,5 @@
+<mat-tab-group>
+    <mat-tab [label]="factura.concepto" *ngFor="let factura of facturas">
+      {{factura.numero}} {{factura.concepto}} {{factura.importe}} </mat-tab>
+  
+  </mat-tab-group>

@@ -8,11 +8,16 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { C2Component } from './c2/c2.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
+import {MatTreeModule} from '@angular/material/tree';
 @NgModule({
   declarations: [
     AppComponent,
-    C1Component
+    C1Component,
+    C2Component,
+
   ],
   imports: [
     BrowserModule,
@@ -20,7 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
      MatMenuModule,
      BrowserAnimationsModule,
-     HttpClientModule
+     HttpClientModule,
+     MatTabsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
